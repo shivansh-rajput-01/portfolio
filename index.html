@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="space"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tech">Tech Known</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <p class="big">Hi,i am Shivansh Rajput</p>
+            <p class="big">I am a developer</p>
+        </div>
+        <div class="bottom">
+            <p class="big">Technologies Known</p>
+            <span id="element" class="big"></span>
+        </div>
+    </main>
+    <div class="about" id="about">
+        <div class="box">
+            <h1>About</h1>
+            <div class="content">
+                <ul>
+                    <li>
+                        I have completed my 10<sup>th</sup> from City Public School , CBSE. I got 95.8% marks.
+                    </li>
+                    <li>
+                        I have completed my 12<sup>th</sup> from City Public School , CBSE. I got 96.2% marks.
+                    </li>
+                    <li>
+                        I am pursuing my B.Tech from NIGC , AKTU. I got 9.05 SGPA in sem 1 and 8.68 SGPA in sem 2.
+                    </li>
+                    <li>
+                        My hobbies are coding, travelling and watching cricket.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tech" id="tech">
+        <div class="box">
+            <h1>Technologies known</h1>
+            <div class="content">
+                <ul>
+                    <li>HTML: 
+                        <li>Created basic project like portfolio</li>
+                    </li>
+                    <li>CSS:
+                        <li>Created basic designs of portfolio,food websites and some asthetic web pages</li>
+                    </li>
+                    <li>JS:
+                        <li>Learned basics and about DOM also</li>
+                    </li>
+                    <li>Python:
+                        <li>Created projects like a basic tic tac toe with computer mode</li>
+                    </li>
+                    <li>Java:
+                        <li>Learned basics with DSA</li>
+                    </li>
+                    <li>C:
+                        <li>Created project like basic tic tac toe and library management system</li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="box">
+            <h1>Projects</h1>
+            <div class="content">
+                <ul>
+                    <li>Tic Tac Toe using C language with features like player name and win check conditions</li>
+                    <li>Created a Library Management System using c</li>
+                    <li>Created this portfolio using HTML and CSS</li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="project.html">View Projects</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <p class="big dark">Contact Me</p>
+        <div class="center">
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <textarea placeholder="Enter your message" rows="10" cols="50"></textarea>
+                </div>
+                <div>
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p class="sm">
+                Thanks for visiting my portfolio
+            </p>
+            <p class="sm">
+                &copy; all rights are reserved
+            </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['HTML', 'CSS','JS','PYTHON','JAVA','C'],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop: true,
+        });
+      </script>
+</body>
+</html>
