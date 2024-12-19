@@ -7,7 +7,7 @@
     align-items: center;
     border: 1px solid black;
     height: 60px;
-    background-color: rgb(224, 134, 189);
+    background-color: rgb(247, 247, 242);
     margin-top: 20px;
     width: 80vw;
     margin-left:auto;
@@ -27,7 +27,7 @@
 }
 .newBox{
     padding: 10px;
-    background-color:rgb(224, 134, 189);
+    background-color: rgb(247, 247, 242);
     display: flex;
     justify-content: center;
     width: 80vw;
@@ -43,5 +43,33 @@ ol{
     margin-left: 20px;
 }
 .bar:hover{
-    background-color: rgba(224, 134, 189,0.8);
+    background-color: rgba(247, 247, 242,0.8);
+}
+main{
+    padding-top: 60px;
+}
+.photo{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 1px 1px rgb(29, 25, 25);
+    background-image: url('shivansh.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box .content ul .top{
+    font-size: 21px;
+    font-weight: 700;
+}
+.newBox ol li{
+    font-size: 18px;
 }

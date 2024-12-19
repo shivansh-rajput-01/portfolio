@@ -29,7 +29,7 @@ nav ul li a{
 .space{
     width: 40%;
 }
-main{
+.main{
     padding-top: 60px;
     height: 90vh;
     width: 100vw;
@@ -109,7 +109,7 @@ button{
     height: 40px;
     width: 100px;
     border-radius: 10px;
-    box-shadow: 2px 2px rgb(54, 53, 53);
+    box-shadow: 2px 2px ;
 }
 button:hover{
     width: 105px;
@@ -144,6 +144,9 @@ h1{
     border-radius: 10px;
     background-color: gray;
     box-shadow: 1px 2px rgb(33, 33, 33);
+}
+.btn:hover{
+    box-shadow: 2px 4px rgb(54, 59, 57);
 }
 .btn a{
     text-decoration: none;
