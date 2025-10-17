@@ -3,9 +3,9 @@
     padding: 0;
 }
 body{
-    background-color: gray;
+    background-color: grey;
 }
-nav{
+/* nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,7 +21,7 @@ nav ul{
 }
 nav ul li{
     list-style: none;
-}
+} */
 nav ul li a{
     text-decoration: none;
     color: white;
@@ -54,7 +54,8 @@ nav ul li a{
     align-items: center;
 }
 .box{
-    width: 75vw;
+    min-width: 75vw;
+    max-width: 95vw;
     min-height: 40vh;
     border-radius: 20px;
     box-shadow: 2px 2px rgb(27, 26, 26);
@@ -62,11 +63,21 @@ nav ul li a{
     background-color: rgb(247, 247, 242);
     box-sizing: border-box;
     padding: 20px;
+    overflow: auto;
+    /* transform: scale(1.0);
+    transition: transform 0.1s linear; */
 }
+
+.box::-webkit-scrollbar{
+    display: none;
+}
+
 .box:hover{
     width: 80vw;
-    box-shadow: 10px 10px rgb(58, 57, 57);
+    /* transform: scale(1.02); */
+    box-shadow: 4px 4px rgb(94, 94, 94);
 }
+
 .footer{
     min-height: 10vh;
     display: flex;
@@ -155,4 +166,87 @@ h1{
 .bottom{
     width: 50%;
     text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: white;
+}
+
+.nav1 {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: end;
+}
+
+.menu {
+    position: absolute;
+    top: 2vmin;
+    left: 4vmin;
+    transform: rotate(90deg);
+    display: none;
+    font-size: 30px;
+}
+
+.close{
+    position: absolute;
+    top: 2vmin;
+    left: 4vmin;
+    color: white;
+}
+
+#hide{
+    display: none;
+}
+
+#display{
+    display: block;
+}
+
+.ul1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav2 {
+    position: fixed;
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul2 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.nav2 .ul2 li {
+    margin: 2px;
+    padding: 5px;
+}
+
+@media(max-width:769px){
+    .bottom{
+        width: 100%;
+    }
+    .big{
+        font-size: 20px;
+    }
+    .left{
+        width: 100%;
+    }
 }

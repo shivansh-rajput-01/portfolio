@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
+
 <body>
     <header>
-        <nav>
-            <div class="space"></div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tech">Tech Known</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="nav1">
+            <ul class="ul1" id="list">
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="#about">About</a></li>
+                <li class="links"><a href="#tech">Tech Known</a></li>
+                <li class="links"><a href="project.html">Projects</a></li>
+                <li class="links"><a href="#contact">Contact</a></li>
+                <li class="menu" id="menu">|||</li>
+                <span class="material-symbols-outlined close" id="hide">
+                    close
+                </span>
             </ul>
         </nav>
     </header>
@@ -55,23 +61,23 @@
             <h1>Technologies known</h1>
             <div class="content">
                 <ul>
-                    <li>HTML: 
-                        <li>Created basic project like portfolio</li>
+                    <li>HTML:
+                    <li>Created basic project like portfolio</li>
                     </li>
                     <li>CSS:
-                        <li>Created basic designs of portfolio,food websites and some asthetic web pages</li>
+                    <li>Created basic designs of portfolio,food websites and some asthetic web pages</li>
                     </li>
                     <li>JS:
-                        <li>Learned basics and about DOM also</li>
+                    <li>Learned basics and about DOM also</li>
                     </li>
                     <li>Python:
-                        <li>Created projects like a basic tic tac toe with computer mode</li>
+                    <li>Created projects like a basic tic tac toe with computer mode</li>
                     </li>
                     <li>Java:
-                        <li>Learned basics with DSA</li>
+                    <li>Learned basics with DSA</li>
                     </li>
                     <li>C:
-                        <li>Created project like basic tic tac toe and library management system</li>
+                    <li>Created project like basic tic tac toe and library management system</li>
                     </li>
                 </ul>
             </div>
@@ -128,11 +134,13 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['HTML', 'CSS','JS','PYTHON','JAVA','C'],
-          typeSpeed: 50,
-          backSpeed: 50,
-          loop: true,
+            strings: ['HTML', 'CSS', 'JS', 'PYTHON', 'JAVA', 'C'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
         });
-      </script>
+    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
